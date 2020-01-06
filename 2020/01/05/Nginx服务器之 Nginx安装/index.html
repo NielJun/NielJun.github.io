@@ -23,7 +23,9 @@
 
 
 <meta name="description" content="
-Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在BSD-like 协议下发行。其特点是占有内存少，并发能力强，是一个高性能的HTTP和反向代..." />
+
+
+Nginx是一款轻量级的Web 服务器反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在BSD-like 协议下发行。其特点是占有内存少，并发能力强，是一个高性能的HTTP和反向..." />
 
 
 <meta name="robots" content="all" />
@@ -181,8 +183,11 @@ Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（I
     </div>
     
     <div class="post-body post-content">
-        <p><img src="/Users/daniel/HexoBlogs/source/_posts/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B-Nginx%E5%AE%89%E8%A3%85/nginx.jpg" alt=""></p>
-<p>Nginx是一款<a href="https://baike.baidu.com/item/轻量级/10002835" target="_blank" rel="noopener">轻量级</a>的<a href="https://baike.baidu.com/item/Web/150564" target="_blank" rel="noopener">Web</a> 服务器/<a href="https://baike.baidu.com/item/反向代理/7793488" target="_blank" rel="noopener">反向代理</a>服务器及<a href="https://baike.baidu.com/item/电子邮件/111106" target="_blank" rel="noopener">电子邮件</a>（IMAP/POP3）代理服务器，在BSD-like 协议下发行。其特点是占有内存少，<a href="https://baike.baidu.com/item/并发/11024806" target="_blank" rel="noopener">并发</a>能力强，是一个高性能的<a href="https://baike.baidu.com/item/HTTP" target="_blank" rel="noopener">HTTP</a>和<a href="https://baike.baidu.com/item/反向代理/7793488" target="_blank" rel="noopener">反向代理</a>web服务器，同时也提供了IMAP/POP3/SMTP<a href="https://baike.baidu.com/item/服务/100571" target="_blank" rel="noopener">服务</a>。</p>
+        
+
+<blockquote>
+<p>Nginx是一款轻量级的Web 服务器反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在BSD-like 协议下发行。其特点是占有内存少，并发能力强，是一个高性能的HTTP和反向代理web服务器，同时也提供了IMAP/POP3/SMTP服务。</p>
+</blockquote>
 <h2 id="nginx安装"><a href="#nginx安装" class="headerlink" title="nginx安装"></a>nginx安装</h2><ul>
 <li>推荐使用官网的压缩包解压再上传到linux进行安装</li>
 </ul>
@@ -198,8 +203,8 @@ Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（I
 
 <h3 id="执行-nginx-启动nginx服务-启动完成以后-查看linux进程查看相关nginx启动情况"><a href="#执行-nginx-启动nginx服务-启动完成以后-查看linux进程查看相关nginx启动情况" class="headerlink" title="执行./nginx 启动nginx服务 启动完成以后 查看linux进程查看相关nginx启动情况"></a>执行./nginx 启动nginx服务 启动完成以后 查看linux进程查看相关nginx启动情况</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep —nginx</span><br></pre></td></tr></table></figure>
 
-<p><img src="/Users/daniel/HexoBlogs/source/_posts/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B-Nginx%E5%AE%89%E8%A3%85/bash.png" alt="Nginx后台进程"></p>
-<h3 id="由于nginx默认的是80端口-所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip-175-24-15-152-出现如下-则表示启动成功"><a href="#由于nginx默认的是80端口-所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip-175-24-15-152-出现如下-则表示启动成功" class="headerlink" title="由于nginx默认的是80端口 所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip: 175.24.15.152 出现如下 则表示启动成功"></a>由于nginx默认的是80端口 所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip: 175.24.15.152 出现如下 则表示启动成功</h3><p>![Nginx初次启动成功](/Users/daniel/HexoBlogs/source/_posts/Nginx服务器之-Nginx安装/nginx start.png)</p>
+<p><img src="/2020/01/05/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%20Nginx%E5%AE%89%E8%A3%85/bash.png" alt="Nginx后台进程"></p>
+<h3 id="由于nginx默认的是80端口-所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip-175-24-15-152-出现如下-则表示启动成功"><a href="#由于nginx默认的是80端口-所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip-175-24-15-152-出现如下-则表示启动成功" class="headerlink" title="由于nginx默认的是80端口 所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip: 175.24.15.152 出现如下 则表示启动成功"></a>由于nginx默认的是80端口 所以我们可以直接访问ip地址看nginx是否启动成功浏览器打开ip: 175.24.15.152 出现如下 则表示启动成功</h3><p>![Nginx初次启动成功](nginx start.png)</p>
 <h3 id="由于很多的linux系统的端口是被防火墙关闭的-所以我们得带开或者查看当前端口的情况"><a href="#由于很多的linux系统的端口是被防火墙关闭的-所以我们得带开或者查看当前端口的情况" class="headerlink" title="由于很多的linux系统的端口是被防火墙关闭的 所以我们得带开或者查看当前端口的情况"></a>由于很多的linux系统的端口是被防火墙关闭的 所以我们得带开或者查看当前端口的情况</h3><h4 id="显示所有的端口情况"><a href="#显示所有的端口情况" class="headerlink" title="显示所有的端口情况"></a>显示所有的端口情况</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd - -list -all</span><br></pre></td></tr></table></figure>
 
 <h4 id="开启防火墙的8001端口"><a href="#开启防火墙的8001端口" class="headerlink" title="开启防火墙的8001端口"></a>开启防火墙的8001端口</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd - -add-port=8001/tcp —permanent</span><br></pre></td></tr></table></figure>
@@ -242,6 +247,26 @@ Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（I
 </ul>
 
     </div>
+    
+    <div class="reward" ontouchstart>
+    <div class="reward-wrap">赏
+        <div class="reward-box">
+            
+            <span class="reward-type">
+                <img class="alipay" src="/img/reward-alipay.jpg"><b>支付宝打赏</b>
+            </span>
+            
+            
+            <span class="reward-type">
+                <img class="wechat" src="/img/reward-wepay.jpg"><b>微信打赏</b>
+            </span>
+            
+        </div>
+    </div>
+    <p class="reward-tip">
+        赞赏是不耍流氓的鼓励
+    </p>
+</div>
     
     <div class="post-footer">
         <div>
